@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binita Shrestha - IT Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/LOGO.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IT Student</p>
+                <h1>Hi, I'm Binita Shrestha<br>From Nepal</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="images/Picture2.png" alt="Binita Shrestha">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magnam quaerat voluptatibus?
+                        Perspiciatis debitis explicabo in quod velit voluptatem, laudantium assumenda, nobis officiis
+                        molestiae, obcaecati cupiditate incidunt aperiam adipisci magni porro laboriosam sequi itaque
+                        consequuntur? Cumque, animi! Debitis provident perspiciatis magni sed, aperiam voluptates
+                        nostrum suscipit, non, cupiditate id enim Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Earum nemo, aperiam similique sapiente totam qui porro vero sunt impedit odit expedita
+                        vitae, unde neque quo sequi voluptate nihil nam molestiae minus consectetur nobis! Alias tempore
+                        inventore quidem, aliquid ex iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestiae veritatis non iusto culpa accusantium aliquid rem adipisci voluptatum veniam
+                        laboriosam!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" id="skillsTab">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" id="experienceTab">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" id="educationTab">Education</p>
+                    </div>
+
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Digital Marketing</span><br>Social Media Marketing</li>
+                            <li><span>Content Creator</span><br>Content Creating</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                        </ul>
+                    </div>
+
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Digital Marketing Officer</li>
+                            <li><span>2022 - 2023</span><br>Content Creator</li>
+                            <li><span>2021</span><br>Receptionist</li>
+                        </ul>
+                    </div>
+
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>2023 - 2027 (estimated)</span><br>Bachelor In Computer Science And Information
+                                Technology(BCSIT) from Medhavi College</li>
+                            <li><span>2021 - 2023</span><br>Intermediate Level Education from Adarsha Secondary School
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------SERVICE---------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quos Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Laboriosam, saepe!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Social Media Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quos Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, enim?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>Content Creation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quos Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Perferendis, qui?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------- PORTFOLIO-------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-3.jpeg">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>An amazon website I cloned using HTML, JavaScript and CSS.</p>
+                        <a href="https://bneta0888.github.io/Amazon-Clone/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpeg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, expedita officia delectus
+                            dignissimos tempora nisi dolor rerum reiciendis aperiam harum!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpeg">
+                    <div class="layer">
+                        <h3>Content Creation</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, expedita officia delectus
+                            dignissimos tempora nisi dolor rerum reiciendis aperiam harum!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <!-- ------------------------Contact-------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> binitashrestha0888@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9808659203</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Binita Shrestha (CV).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Messsage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Binita. Made <i class="fa-solid fa-heart"></i> by Binita Shrestha</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

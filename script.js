@@ -34,20 +34,3 @@ function closemenu() {
     sidemenu.style.right = "-200px";
 }
 
-// Form submission
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyR3Ip--XTzu4YC1u2RkWYKvPz70qIC3ZsIp3scAbT4CKHV0K8ymbOHuRBWwqehbuQO/exec';
-const form = document.forms['submit-to-google-sheet'];
-const msg = document.getElementById("msg");
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function(){
-                msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message));
-});
